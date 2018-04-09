@@ -37,6 +37,13 @@ public partial class admin_Redis : System.Web.UI.Page
         txtName.Text = redisClient.Get<string>("name");
         txtAge.Text = redisClient.Get<string>("age");
         txtTel.Text = redisClient.Get<string>("tel");
+
+        User uModel = redisClient.Get<User>("urn:user:19865865");
+        List<User> list = redisClient.GetAll<User>().ToList<User>();
+        var user = redisClient.GetTypedClient<User>();
+        //User mod = list.Select(m => m.AGE == 33).FirstOrDefault<User>();
+        //redisClient.GetAll().Where(m => m.Id == 1).First().Name
+
     }
     class User
     {
