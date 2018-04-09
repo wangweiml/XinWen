@@ -18,7 +18,6 @@ public partial class admin_Redis : System.Web.UI.Page
     protected void btnSave_Click(object sender, EventArgs e)
     {
         RedisClient redisClient = new RedisClient("127.0.0.1", 6379);
-        //redisClient.FlushAll();
         string key = txtKey.Text;
         string value = txtValue.Text;
         redisClient.Set<string>(key, value);
