@@ -152,6 +152,7 @@
             <li onclick="invalue('文章')"><a href="Artice.aspx" target="right">文章</a></li>
             <li onclick="invalue('视频')"><a href="Vidio.aspx" target="right">视频</a></li>
             <li onclick="invalue('Redis')"><a href="Redis.aspx" target="right">Redis</a></li>
+            <li onclick="invalue('ActiveMQ')"><a href="TestActiveMQ.aspx" target="right">ActiveMQ</a></li>
             <li>导航菜单</li>
           </ul>
           <h3> 用户管理</h3>
